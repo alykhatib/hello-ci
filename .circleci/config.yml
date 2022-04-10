@@ -39,7 +39,8 @@ jobs:
       - checkout
       - run:
           name: "Say Aly"
-          command: echo ${my_first_env_var}	
+          command: |
+            echo $my_first_env_var
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
